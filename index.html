@@ -23,6 +23,10 @@
         <div class="login_textRegister">Register</div>
       </div>
       <div class="login_loginContainer">
+        <div class="windowBar" style="display: flex">
+          <img src="/terminal-fill.svg" style="filter: invert(); margin: 2px" alt="" />
+          <div style="margin-left: 5px">Login.exe</div>
+        </div>
         <div class="loginTexts userText">Username:</div>
         <input class="inputsPredef getName" type="text" />
         <div class="loginTexts passText">Password:</div>
@@ -36,6 +40,10 @@
       </div>
       <!-- -------------------------------------------------------- -->
       <div class="login_registerContainer">
+        <div class="windowBar" style="display: flex">
+          <img src="/terminal-fill.svg" style="filter: invert(); margin: 2px" alt="" />
+          <div style="margin-left: 5px">Register.exe</div>
+        </div>
         <div class="loginTexts rUserText">Username:</div>
         <input class="inputsPredef rGetName" type="text" />
         <div class="loginTexts passText">Password:</div>
@@ -47,7 +55,7 @@
         <div class="loginTexts passText">One more time:</div>
         <div style="display: flex">
           <input class="inputsPredef rGetPass2" type="password" />
-          <div class="loginTexts msgDontMatch"></div>
+          <div class="msgPassMatch"></div>
         </div>
         <div class="loginTexts enterBtn" onclick="registerBtn()">REGISTER</div>
       </div>
