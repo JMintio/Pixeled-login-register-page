@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/sf-intermosaic" rel="stylesheet" />
+  </head>
+  <body class="body">
+    <div class="page_head">
+      <div class="page_headText1">mintio</div>
+      <div class="page_headText2">Landing page</div>
+    </div>
+    <div class="login_container">
+      <div class="login_headContainer" onclick="loginOrRegister()">
+        <div class="getWidth"></div>
+        <div class="login_btnSquare"></div>
+      </div>
+      <div class="login_textContainer">
+        <div class="login_textLogin">Login</div>
+        <div class="login_textRegister">Register</div>
+      </div>
+      <div class="login_loginContainer">
+        <div class="loginTexts userText">User:</div>
+        <input class="inputsPredef getName" type="text" />
+        <div class="loginTexts passText">Password:</div>
+        <div style="display: flex">
+          <input class="inputsPredef getPass" type="password" />
+          <div class="showBtn" onclick="showPass()">show</div>
+        </div>
+        <div class="loginTexts enterBtn" onclick="enterBtn()">ENTER</div>
+
+        <div class="loginTexts forgotBtn" onclick="forgotPass()">Forgot my password</div>
+      </div>
+      <!-- -------------------------------------------------------- -->
+      <div class="login_registerContainer">
+        <div class="loginTexts userText">User:</div>
+        <input class="inputsPredef getName" type="text" />
+        <div class="loginTexts passText">Password:</div>
+        <div style="display: flex">
+          <input class="inputsPredef getPass" type="password" />
+          <div class="showBtn" onclick="showPass()">show</div>
+        </div>
+        <div class="loginTexts enterBtn" onclick="enterBtn()">ENTER</div>
+
+        <div class="loginTexts forgotBtn" onclick="forgotPass()">Forgot my password</div>
+      </div>
+      <div class="consoleContainer"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
