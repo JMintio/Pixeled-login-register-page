@@ -101,15 +101,16 @@
 .showBtn {
   cursor: pointer;
   padding: 0px 2px 0px 2px;
-  background-color: #e2a5c2;
+  height: 15pt;
+
   color: white;
 }
 .showBtn:hover {
-  background-color: gray;
+  background-color: #e2a5c2;
 }
 .inputsPredef {
   border: 0px;
-  height: 13pt;
+  height: 15pt;
   padding-left: 5px;
   width: fit-content;
   background-color: #c3adb6;

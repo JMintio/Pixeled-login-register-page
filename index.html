@@ -23,29 +23,33 @@
         <div class="login_textRegister">Register</div>
       </div>
       <div class="login_loginContainer">
-        <div class="loginTexts userText">User:</div>
+        <div class="loginTexts userText">Username:</div>
         <input class="inputsPredef getName" type="text" />
         <div class="loginTexts passText">Password:</div>
         <div style="display: flex">
           <input class="inputsPredef getPass" type="password" />
           <div class="showBtn" onclick="showPass()">show</div>
         </div>
-        <div class="loginTexts enterBtn" onclick="enterBtn()">ENTER</div>
+        <div class="loginTexts enterBtn" onclick="loginBtn()">LOGIN</div>
 
         <div class="loginTexts forgotBtn" onclick="forgotPass()">Forgot my password</div>
       </div>
       <!-- -------------------------------------------------------- -->
       <div class="login_registerContainer">
-        <div class="loginTexts userText">User:</div>
-        <input class="inputsPredef getName" type="text" />
+        <div class="loginTexts rUserText">Username:</div>
+        <input class="inputsPredef rGetName" type="text" />
         <div class="loginTexts passText">Password:</div>
         <div style="display: flex">
-          <input class="inputsPredef getPass" type="password" />
+          <input class="inputsPredef rGetPass" type="password" />
           <div class="showBtn" onclick="showPass()">show</div>
         </div>
-        <div class="loginTexts enterBtn" onclick="enterBtn()">ENTER</div>
 
-        <div class="loginTexts forgotBtn" onclick="forgotPass()">Forgot my password</div>
+        <div class="loginTexts passText">One more time:</div>
+        <div style="display: flex">
+          <input class="inputsPredef rGetPass2" type="password" />
+          <div class="loginTexts msgDontMatch"></div>
+        </div>
+        <div class="loginTexts enterBtn" onclick="registerBtn()">REGISTER</div>
       </div>
       <div class="consoleContainer"></div>
     </div>

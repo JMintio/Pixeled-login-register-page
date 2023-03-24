@@ -31,13 +31,35 @@ function loginOrRegister() {
 }
 function showPass() {
   var pass = document.querySelector(".getPass");
+  var rPass = document.querySelector(".rGetPass");
+  var rPass2 = document.querySelector(".rGetPass2");
   var showBtn = document.querySelector(".showBtn");
   var getAttr = pass.getAttribute("type");
   pass.setAttribute("type", "text");
+  rPass.setAttribute("type", "text");
+  rPass2.setAttribute("type", "text");
   showBtn.innerHTML = "hide";
   if (getAttr == "text") {
     pass.setAttribute("type", "password");
     showBtn.innerHTML = "show";
   }
   document.querySelector(".consoleContainer").innerHTML = getAttr;
+}
+function registerBtn() {
+  var register = document.querySelector(".rGetPass");
+  var register2 = document.querySelector(".rGetPass2");
+  var msgPassMatch = document.querySelector(".msgPassMatch");
+  register.setAttribute("type", "text");
+  register2.setAttribute("type", "text");
+  var registerValue = register.value;
+  var registerValue2 = register2.value;
+  if (registerValue == registerValue2) {
+    msgPassMatch.style.color = "green";
+    msgPassMatch.innerHTML = "ok";
+  } else {
+    msgPassMatch.style.color = "red";
+    msgPassMatch.innerHTML = "password doesn't match";
+  }
+  register.setAttribute("type", "password");
+  register2.setAttribute("type", "password");
 }
