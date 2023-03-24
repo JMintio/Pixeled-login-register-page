@@ -41,6 +41,8 @@ function showPass() {
   showBtn.innerHTML = "hide";
   if (getAttr == "text") {
     pass.setAttribute("type", "password");
+    rPass.setAttribute("type", "password");
+    rPass2.setAttribute("type", "password");
     showBtn.innerHTML = "show";
   }
   document.querySelector(".consoleContainer").innerHTML = getAttr;
